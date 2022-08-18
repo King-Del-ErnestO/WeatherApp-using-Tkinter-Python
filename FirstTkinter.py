@@ -5,7 +5,7 @@ import requests
 HEIGHT = 500
 WIDTH = 600
 #API: Application Programming Interface
-# 8d1a935488e64726a9c860b3a6100252
+# 8
 #api.openweathermap.org/data/2.5/forecast?q={city name}&appid={your api key}
 
 def test_func(entry):
@@ -26,7 +26,7 @@ def format_reponse(weather):
 
 def get_weather(city):
     weather_key = "8d1a935488e64726a9c860b3a6100252"
-    url = "https://api.openweathermap.org/data/2.5/weather"
+    url = "https://api.open"
     params = {"APPID": weather_key, "q": city, "units": "imperial"}
     response = requests.get(url, params=params)
     weather = response.json()
